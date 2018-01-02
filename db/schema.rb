@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180102082644) do
+=======
+ActiveRecord::Schema.define(version: 20180102083050) do
+>>>>>>> product
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -19,4 +23,16 @@ ActiveRecord::Schema.define(version: 20180102082644) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
+  create_table "products", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "category_id"
+    t.float    "price"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+>>>>>>> product
 end
